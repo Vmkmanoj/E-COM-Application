@@ -1,0 +1,84 @@
+.cartitems{
+   margin: 0;
+   width: 100%;
+   padding: 400px;
+   margin-top: -350px;
+}
+.cartitam-down{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cartitems hr{
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+    margin-bottom: 20px;
+    
+
+}
+.remove_icon{
+    cursor: pointer;
+}
+.cartiteam-fromat-main{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 75px;
+    padding: 20px 0px;
+    color: #454545;
+    font-size:18px;
+    font-weight: 600px;
+}
+.cartitems-format{
+    font-size: 17px;
+    font-weight: 500;
+}
+.carticon-product-icon{
+    height: 62px;
+}
+
+.cartitems-quantity{
+    width: 64px;
+    height: 50px;
+    border: 2px solid #ebebeb;
+    background:white;
+}
+.cartitem-down{
+    display: flex;
+    margin: 100px 0px;
+}
+.cartitems-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 40px;
+
+}
+.cartiteam-total-item{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  
+}
+.chkout button{
+    width: 262px;
+    height:58px;
+    background-color: red;
+    color:white ;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+}
+.cartiteam-total-iteam-fee{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+button{
+    cursor: pointer;
+}

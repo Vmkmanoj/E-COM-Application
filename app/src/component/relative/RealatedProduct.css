@@ -1,0 +1,48 @@
+.relatedproduct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    height:   90vh;
+} 
+.relatedproduct h1{
+    color:#171717;
+    font-size: 50px;
+    border-radius: 10px; 
+    color: #252525;
+     
+}
+.relatedproduct hr{
+    width: 290px;
+    height: 2px;
+    background-color: #171717;
+}
+
+
+
+.relatedproduct-item{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+@media (prefers-reduced-motion: no-preference) {
+    .relatedproduct {
+      animation-name: wipe-enter;
+      animation-duration: 0.2s;
+      /* animation-iteration-count: infinite; */
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .relatedproduct {
+      animation: wipe-enter 1s initial;
+    }
+  }
