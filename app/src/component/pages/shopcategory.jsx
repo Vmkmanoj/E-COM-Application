@@ -18,7 +18,12 @@ function Shopcategory(props){
                 <span>Showing {props.Catagory.length}</span> out of {all_product.length} products
             </p>
             <div className="shopcategory-sort">
-                Sort by <img src={drowpdown} alt="" />
+            <button type="" className="dropbtn">SortBy </button>
+            <div className="dropdown-content">
+                <button>Low - High</button>
+                <button>High-  Low</button>
+            </div>
+
             </div>
             </div>
 
