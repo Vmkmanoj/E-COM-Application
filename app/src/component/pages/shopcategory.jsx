@@ -4,9 +4,32 @@ import "./css/Shopcategory.css"
 import { ShopContext } from "../../Context/ShopContext";
 import Iteam from "../items/items";
 import drowpdown from "../assets/dropdown_icon.png"
+import { useState } from "react";
 
 function Shopcategory(props){
     const {all_product}=useContext(ShopContext);
+
+    console.log(all_product)
+
+    let a = all_product.filter((x) => x.catagory===props.Catagory)
+
+    console.log(a.length)
+
+    const [category,SetCategory] = useState({});
+
+    // console.log(props.Catagory)
+
+    // console.log(all_product.category)
+
+    
+
+    
+
+    // console.log(a);
+
+    // console.log(props.Category);
+
+    // SetCategory(all_product)
 
     
 
@@ -15,7 +38,11 @@ function Shopcategory(props){
             <img className="bannerImage" src={props.banner}  alt="" />
             <div className="shopcategory-indexsort">
             <p>
-                <span>Showing {props.Catagory.length}</span> out of {all_product.length} products
+                <span>Showing {props.Catagory}</span> out of 
+                {
+                   props.Catagory===all_product.category ? "" : all_product.length
+                    
+                } products
             </p>
             <div className="shopcategory-sort">
             <button type="" className="dropbtn">SortBy </button>
