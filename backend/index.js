@@ -13,7 +13,7 @@ app.use(cors())
 app.use(express.json())
 
 
-mongoose.connect("mongodb+srv://vmkmano:1357@cluster0.cbqch0e.mongodb.net/E-COM");
+mongoose.connect("mongodb+srv://vmkmano:1357@cluster0.cbqch0e.mongodb.net/E-COM").then(()=>console.log("Mongo Db connect")).catch((err)=>console.log(err));
 
 app.get("/",(req,res)=>{
     res.send("it working...")
