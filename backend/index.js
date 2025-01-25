@@ -21,11 +21,13 @@ app.get("/",(req,res)=>{
 //image strage Engine
 
 const storage = multer.diskStorage({
+
     destination: './upload/images',
     filename: (req, file, cb) => {
       console.log(file);
         return cb(null, `${file.fieldname}_${Date.now()}${path.extname(file.originalname)}`)
     }
+    
 })
 
 //uplaod
